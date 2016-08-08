@@ -1,6 +1,12 @@
 {
-  "name": "Karun Japhet",
-  "other-names": "Karun AB",
+  "name": {
+    "first": "Karun",
+    "last": "Japhet"
+  },
+  "other-names": {
+    "first": "Karun",
+    "last": "AB"
+  },
   "email": "karun@japhet.in",
   "website": "https://karun.me",
   "blog": "https://blog.karun.me",

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>{{name}} - Curriculum Vitae</title>
+<title>{{name.first}}'s Resume</title>
 
 <meta name="viewport" content="width=device-width"/>
-<meta name="description" content="The Curriculum Vitae of {{name}}."/>
+<meta name="description" content="A Curriculum Vitae for {{#name}}{{> templates/partials/name}}{{/name}}."/>
 <meta charset="UTF-8">
 
 <link type="text/css" rel="stylesheet" href="resources/style.css">
@@ -18,11 +18,11 @@
 <div id="cv" class="instaFade">
 	<div class="mainDetails">
 		<div id="headshot" class="quickFade">
-			<img src="resources/headshot.jpg" alt="{{name}}" />
+			<img src="resources/headshot.jpg" alt="{{#name}}{{> templates/partials/name}}{{/name}}" />
 		</div>
 
 		<div id="name">
-			<h1 class="quickFade delayTwo">{{name}}</h1>
+			<h1 class="quickFade delayTwo">{{#name}}{{> templates/partials/name}}{{/name}}</h1>
 			<h2 class="quickFade delayThree">{{#jobs.0}}{{> templates/partials/job-title}}{{/jobs.0}}</h2>
 		</div>
 

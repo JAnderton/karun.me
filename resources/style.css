@@ -52,6 +52,10 @@ p {
 	padding: 0 40px;
 }
 
+#mainArea ul {
+	margin-left: 8%;
+}
+
 #headshot {
 	width: 12.5%;
 	float: left;

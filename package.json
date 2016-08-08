@@ -1,0 +1,17 @@
+{
+  "name": "resumer.io",
+  "version": "1.0.0",
+  "description": "Builds resume websites from yaml",
+  "author": "Karun Japhet",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/JAnderton/resumer.io",
+  "dependencies": {
+    "mustache": "~2.2.1"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-mustache-render": "~1.9.2",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-contrib-copy": "~1.0.0"
+  }
+}

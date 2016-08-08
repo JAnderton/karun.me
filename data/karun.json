@@ -1,0 +1,141 @@
+{
+  "name": "Karun Japhet",
+  "other-names": "Karun AB",
+  "email": "karun@japhet.in",
+  "website": "https://karun.me",
+  "blog": "https://blog.karun.me",
+  "mobile-number": "+1 347-209-6272",
+  "summary": {
+    "intro": [
+      "Karun is a graduate from Mumbai University having done his B.E. in Information Technology.",
+      "He has excellent interpersonal and communication skills demonstrated throughout his academic as well as professional career.",
+      "He has a keen interest in analysis (technical and functional) and problem solving. His analytic skills allow him to provide multiple solutions to a given problem and evaluate the best approach for it.",
+      "A sound technical person, he has the ability to easily grasp the functional aspects of a project and adapt quickly according to the circumstances.",
+      "A positive attitude towards work, pro-activeness along with diligence and discipline has helped him to overcome challenges and succeed in all the tasks undertaken by him."
+    ],
+    "experience": {
+      "title": "His experience so far features in",
+      "items": [
+        "Application Design",
+        "Development",
+        "Requirements Writing",
+        "Application Support"
+      ]
+    },
+    "specialties": {
+      "title": "Specialties",
+      "items": [
+        "Software Development",
+        "Problem Analysis and Solution Derrivation",
+        "Strong Inter-personal skills"
+      ]
+    }
+  },
+  "jobs": [
+    {
+      "position": "Technical Lead",
+      "company": "ThoughtWorks",
+      "from": "August 2014",
+      "location": "New York, USA",
+      "summary": {
+        "body": "Through Thoughtworks I provide software development consulting skills to various clients across various domains. Coupled with the software development skills I am also focussed on applying agile and lean principles and practices to the project. I work with varied sized Thoughtworks teams in collaboration with the client teams through the life cycle of the projects."
+      },
+      "projects": []
+    },
+    {
+      "position": "Software Architect",
+      "company": "BlobCity",
+      "from": "April 2013",
+      "to": "July 2014",
+      "location": "Mumbai, India",
+      "summary": {
+        "body": "Work on solutions and applications for the BlobCity database, a high performance No-Query database solution on the cloud.",
+        "title": "Key Responsibilities",
+        "items": [
+          "Design and Architecture for projects",
+          "Requirements and business analysis for clients",
+          "Technical evangelism",
+          "Code review",
+          "Software development process management"
+        ]
+      },
+      "projects": [],
+      "awards": []
+    },
+    {
+      "position": "Senior Software Engineer",
+      "company": "Accenture",
+      "from": "December 2009",
+      "to": "April 2013",
+      "location": "Mumbai, India",
+      "summary": {
+        "body": "Worked for a telecom based client in the requirements, design and development phases of a Java Swing based application used to provide Work Force and Ticket Management System.",
+        "title": "Key Responsibilities",
+        "items": [
+          "Software Development",
+          "Team Building/Grooming/Mentoring",
+          "Project Delivery"
+        ]
+      },
+      "projects": [],
+      "awards": []
+    },
+    {
+      "position": "Quality Assurance",
+      "company": "Messenger Plus!",
+      "from": "June 2005",
+      "to": "December 2009",
+      "location": "http://msghelp.net",
+      "online": true,
+      "summary": {
+        "body": "Volunteered as a QA for a wildly popular Windows Messenger plugin with over a million active monthly users"
+      }
+    },
+    {
+      "position": "Technical Support Representative",
+      "company": "Messenger Plus!",
+      "from": "November 2003",
+      "to": "December 2009",
+      "location": "http://msghelp.net",
+      "online": true,
+      "summary": {
+        "body": "Provided technical support for a 50,000+ user based forum for the Messenger Plus! plugin for Windows Messenger for over 6 years. Support was also extended over the IRC channel where played the role of admin."
+      }
+    },
+    {
+      "position": "Administrator",
+      "company": "AXIS Core",
+      "from": "June 2007",
+      "to": "January 2008",
+      "location": "http://axiscore.in",
+      "online": true,
+      "summary": {
+        "body": "Senior Developer and Administration work for the AXIS forum where students interacted to learn programming during college and better their skills for industry readiness."
+      }
+    }
+  ],
+  "education": [
+    {
+      "name": "Bachelor of Engineering in Information Technology",
+      "authority": "Mumbai University",
+      "summary": "Completed Bachelor of Engineering in Information Technology (First Class) specializing in Human Computer Interaction.",
+      "from": "2005",
+      "to": "2009"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Accenture Certified Application Developer",
+      "authority": "Accenture and MIT",
+      "summary": "",
+      "from": "July 2011"
+    },
+    {
+      "name": "Oracle Certified Professional, Java SE 6 Programmer",
+      "authority": "Oracle",
+      "summary": "",
+      "from": "May 2011",
+      "url": "https://www.youracclaim.com/badges/713a762f-5388-4d20-8559-b45c02328f7d/linked_in_profile"
+    }
+  ]
+}

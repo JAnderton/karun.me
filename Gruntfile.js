@@ -15,6 +15,10 @@ module.exports = function (grunt) {
         files: ['data/*.json'],
         tasks: ['mustache_render'],
       },
+      resources: {
+        files: ['resources/*'],
+        tasks: ['copy'],
+      },
     },
     mustache_render: {
       all: {
@@ -34,13 +38,28 @@ module.exports = function (grunt) {
         dest: 'out/',
       },
     },
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src : [
+            'out/resources/*',
+            'out/*'
+          ]
+        },
+        options: {
+          watchTask: true,
+          server: './out'
+        }
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-mustache-render');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   grunt.registerTask('default', ['mustache_render', 'copy']);
   grunt.registerTask('build', ['default']);
-  grunt.registerTask('dev', ['build', 'watch']);
+  grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
 };

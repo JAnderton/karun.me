@@ -17,8 +17,16 @@ module.exports = function (grunt) {
         tasks: ['mustache_render'],
       },
       resources: {
-        files: ['resources/*'],
-        tasks: ['cssmin', 'imagemin', 'htmlmin'],
+        files: ['css/*.css'],
+        tasks: ['cssmin'],
+      },
+      resources: {
+        files: ['img/*.{png,jpg,gif}}'],
+        tasks: ['imagemin'],
+      },
+      resources: {
+        files: ['resources/*.ico}'],
+        tasks: ['copy'],
       },
     },
     mustache_render: {
@@ -32,11 +40,20 @@ module.exports = function (grunt) {
         ]
       }
     },
+    copy: {
+      main: {
+        expand: true,
+        cwd: 'resources',
+        src: '**',
+        dest: 'out/',
+      },
+    },
     browserSync: {
       dev: {
         bsFiles: {
           src : [
-            'out/resources/*',
+            'out/css/*',
+            'out/img/*',
             'out/*'
           ]
         },
@@ -50,9 +67,9 @@ module.exports = function (grunt) {
       target: {
         files: [{
           expand: true,
-          cwd: 'resources',
+          cwd: 'css',
           src: ['*.css', '!*.min.css'],
-          dest: 'out/resources'
+          dest: 'out/css'
         }]
       }
     },
@@ -71,7 +88,7 @@ module.exports = function (grunt) {
       dynamic: {
         files: [{
           expand: true,
-          src: ['resources/*.{png,jpg,gif}'],
+          src: ['img/*.{png,jpg,gif}'],
           dest: 'out'
         }]
       }
@@ -80,7 +97,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('build', ['mustache_render', 'cssmin', 'imagemin', 'htmlmin']);
+  grunt.registerTask('build', ['mustache_render', 'cssmin', 'imagemin', 'htmlmin', 'copy']);
   grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
   grunt.registerTask('default', ['build']);
 };

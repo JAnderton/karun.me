@@ -80,8 +80,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['mustache_render']);
-  grunt.registerTask('min', ['cssmin', 'imagemin', 'htmlmin']);
-  grunt.registerTask('build', ['default', 'min']);
+  grunt.registerTask('build', ['mustache_render', 'cssmin', 'imagemin', 'htmlmin']);
   grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['build']);
 };

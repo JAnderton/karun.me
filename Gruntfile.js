@@ -54,10 +54,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-mustache-render');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-browser-sync');
+  require('load-grunt-tasks')(grunt);
 
   grunt.registerTask('default', ['mustache_render', 'copy']);
   grunt.registerTask('build', ['default']);

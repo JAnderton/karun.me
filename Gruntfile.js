@@ -1,5 +1,6 @@
-
 module.exports = function (grunt) {
+  var mozjpeg = require('imagemin-mozjpeg');
+
   grunt.initConfig({
     watch: {
       tasks: ['mustache_render'],
@@ -17,7 +18,7 @@ module.exports = function (grunt) {
       },
       resources: {
         files: ['resources/*'],
-        tasks: ['copy'],
+        tasks: ['cssmin', 'imagemin', 'htmlmin'],
       },
     },
     mustache_render: {
@@ -30,13 +31,6 @@ module.exports = function (grunt) {
           }
         ]
       }
-    },
-    copy: {
-      main: {
-        expand: true,
-        src: 'resources/*',
-        dest: 'out/',
-      },
     },
     browserSync: {
       dev: {
@@ -51,12 +45,43 @@ module.exports = function (grunt) {
           server: './out'
         }
       }
+    },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'resources',
+          src: ['*.css', '!*.min.css'],
+          dest: 'out/resources'
+        }]
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          'out/index.html': 'out/index.html'
+        }
+      }
+    },
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          src: ['resources/*.{png,jpg,gif}'],
+          dest: 'out'
+        }]
+      }
     }
   });
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['mustache_render', 'copy']);
-  grunt.registerTask('build', ['default']);
+  grunt.registerTask('default', ['mustache_render']);
+  grunt.registerTask('min', ['cssmin', 'imagemin', 'htmlmin']);
+  grunt.registerTask('build', ['default', 'min']);
   grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
 };

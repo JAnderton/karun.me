@@ -5,7 +5,7 @@
 
   <div class="sectionContent">
     {{#jobs}}
-    <article>
+    <article{{#class}} class="{{class}}"{{/class}}>
       <h2>{{> templates/partials/job-title}}</h2>
       <p class="subDetails">{{> templates/partials/duration}} [{{> templates/partials/location}}]</p>
       <p>

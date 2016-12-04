@@ -5,7 +5,7 @@
 
   <div class="sectionContent">
     {{#projects}}
-    <article>
+    <article{{#class}} class="{{class}}"{{/class}}>
       {{> templates/partials/project-title}}
       <p>
         {{#summary}}

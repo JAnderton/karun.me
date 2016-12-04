@@ -13,11 +13,25 @@
   "mobile-number": "+1 347-209-6272",
   "summary": {
     "intro": [
-      "Karun is a graduate from Mumbai University having done his B.E. in Information Technology.",
-      "He has excellent interpersonal and communication skills demonstrated throughout his academic as well as professional career.",
-      "He has a keen interest in analysis (technical and functional) and problem solving. His analytic skills allow him to provide multiple solutions to a given problem and evaluate the best approach for it.",
-      "A sound technical person, he has the ability to easily grasp the functional aspects of a project and adapt quickly according to the circumstances.",
-      "A positive attitude towards work, pro-activeness along with diligence and discipline has helped him to overcome challenges and succeed in all the tasks undertaken by him."
+      {
+        "text":"Karun is a graduate from Mumbai University having done his B.E. in Information Technology."
+      },
+      {
+        "class": "no-print",
+        "text":"He has excellent interpersonal and communication skills demonstrated throughout his academic as well as professional career."
+      },
+      {
+        "class": "no-print",
+        "text":"He has a keen interest in analysis (technical and functional) and problem solving. His analytic skills allow him to provide multiple solutions to a given problem and evaluate the best approach for it."
+      },
+      {
+        "class": "no-print",
+        "text":"A sound technical person, he has the ability to easily grasp the functional aspects of a project and adapt quickly according to the circumstances."
+      },
+      {
+        "class": "no-print",
+        "text":"A positive attitude towards work, pro-activeness along with diligence and discipline has helped him to overcome challenges and succeed in all the tasks undertaken by him."
+      }
     ],
     "experience": {
       "title": "His experience so far features in",
@@ -64,7 +78,8 @@
           "Technical evangelism",
           "Code review",
           "Software development process management"
-        ]
+        ],
+        "class": "no-print"
       },
       "awards": []
     },
@@ -82,7 +97,8 @@
           "Software Development",
           "Team Building/Grooming/Mentoring",
           "Project Delivery"
-        ]
+        ],
+        "class": "no-print"
       },
       "awards": []
     },
@@ -96,7 +112,8 @@
       "online": true,
       "summary": {
         "body": "Volunteered as a QA for a wildly popular Windows Messenger plugin with over a million active monthly users"
-      }
+      },
+      "class": "no-print"
     },
     {
       "id": "mp-sup",
@@ -108,7 +125,8 @@
       "online": true,
       "summary": {
         "body": "Provided technical support for a 50,000+ user based forum for the Messenger Plus! plugin for Windows Messenger for over 6 years. Support was also extended over the IRC channel where played the role of admin."
-      }
+      },
+      "class": "no-print"
     },
     {
       "id": "axis",
@@ -120,7 +138,8 @@
       "online": true,
       "summary": {
         "body": "Senior Developer and Administration work for the AXIS forum where students interacted to learn programming during college and better their skills for industry readiness."
-      }
+      },
+      "class": "no-print"
     }
   ],
   "education": [
@@ -173,7 +192,8 @@
       "location": "Mumbai, India",
       "body": [
         "Lead Developer for aBCDE (a BlobCity Development Environment) which is a custom package Eclipse IDE which integrates with the BlobCity platform allowing automation and increasing ease of development and deployment from a local environment to the cloud."
-      ]
+      ],
+      "class": "no-print"
     },
     {
       "job-id": "blob",
@@ -185,7 +205,8 @@
       "location": "Mumbai, India",
       "body": [
         "iOS application to help customers move towards the use of photo voltaic panels in order to save electricity. This application provides a quick estimate on the investment required and potential savings based on current electricity usage for a household."
-      ]
+      ],
+      "class": "no-print"
     },
     {
       "job-id": "blob",
@@ -197,7 +218,8 @@
       "location": "Mumbai, India",
       "body": [
         "Lead Developer and UX Designer for an online shopping website allowing management of products, orders, deliveries, a notification system, billing via multiple payment gateways"
-      ]
+      ],
+      "class": "no-print"
     },
     {
       "job-id": "acc",

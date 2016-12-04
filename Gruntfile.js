@@ -1,6 +1,4 @@
 module.exports = function (grunt) {
-  var mozjpeg = require('imagemin-mozjpeg');
-
   grunt.initConfig({
     watch: {
       tasks: ['mustache_render'],
@@ -22,7 +20,7 @@ module.exports = function (grunt) {
       },
       resources: {
         files: ['img/*.{png,jpg,gif}}'],
-        tasks: ['imagemin'],
+        tasks: ['copy'],
       },
       resources: {
         files: ['resources/*.ico}'],
@@ -46,6 +44,12 @@ module.exports = function (grunt) {
         cwd: 'resources',
         src: '**',
         dest: 'out/',
+      },
+      images: {
+        expand: true,
+        cwd: 'img',
+        src: '**',
+        dest: 'out/img/',
       },
     },
     browserSync: {
@@ -97,7 +101,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('build', ['mustache_render', 'cssmin', 'imagemin', 'htmlmin', 'copy']);
+  grunt.registerTask('build', ['mustache_render', 'cssmin', 'htmlmin', 'copy']);
   grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
   grunt.registerTask('default', ['build']);
 };

@@ -62,50 +62,9 @@
 			<div class="clear"></div>
 		</section>
 
-		<section>
-			<div class="sectionTitle">
-				<h1>Work Experience</h1>
-			</div>
-
-			<div class="sectionContent">
-				{{#jobs}}
-				<article>
-					<h2>{{> templates/partials/job-title}}</h2>
-					<p class="subDetails">{{> templates/partials/duration}} [{{> templates/partials/location}}]</p>
-					<p>
-						{{#summary}}
-						{{> templates/partials/job-summary}}
-						{{/summary}}
-					</p>
-				</article>
-				{{/jobs}}
-			</div>
-			<div class="clear"></div>
-		</section>
-
-		<section>
-			<div class="sectionTitle">
-				<h1>Education</h1>
-			</div>
-
-			<div class="sectionContent">
-        {{#education}}
-				<article>
-					<h2>{{name}}</h2>
-					<p class="subDetails">{{authority}} [{{> templates/partials/duration}}]</p>
-					{{#summary}}<p>{{summary}}</p>{{/summary}}
-				</article>
-        {{/education}}
-        {{#certifications}}
-				<article>
-					<h2>{{name}}</h2>
-					<p class="subDetails">{{authority}} [{{> templates/partials/duration}}]</p>
-					<p>{{#summary}}{{summary}}{{/summary}}</p>
-				</article>
-        {{/certifications}}
-			</div>
-			<div class="clear"></div>
-		</section>
+		{{> templates/partials/work}}
+		{{> templates/partials/projects}}
+		{{> templates/partials/education}}
 	</div>
 </div>
 </body>

@@ -1,0 +1,26 @@
+<section>
+  <div class="sectionTitle">
+    <h1>Education</h1>
+  </div>
+
+  <div class="sectionContent">
+    {{#education}}
+    <article>
+      <h2>{{name}}</h2>
+      <p class="subDetails">{{authority}} [{{> templates/partials/duration}}]</p>
+      {{#summary}}<p>{{summary}}</p>{{/summary}}
+    </article>
+    {{/education}}
+    {{#certifications}}
+    <article>
+      <h2>{{name}}</h2> {{#url}}<a href="{{url}}" target="_blank">&raquo;</a>{{/url}}
+      <p class="subDetails">{{authority}} [{{> templates/partials/duration}}]</p>
+      {{#summary}}<p>
+        {{summary}}
+        {{#more-url}}<span class="subDetails"><a href="{{more-url}}">More &raquo;</a></span>{{/more-url}}
+      </p>{{/summary}}
+    </article>
+    {{/certifications}}
+  </div>
+  <div class="clear"></div>
+</section>

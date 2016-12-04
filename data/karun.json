@@ -39,16 +39,17 @@
   },
   "jobs": [
     {
+      "id": "tw",
       "position": "Technical Lead",
       "company": "ThoughtWorks",
       "from": "August 2014",
       "location": "New York, USA",
       "summary": {
         "body": "Through Thoughtworks I provide software development consulting skills to various clients across various domains. Coupled with the software development skills I am also focussed on applying agile and lean principles and practices to the project. I work with varied sized Thoughtworks teams in collaboration with the client teams through the life cycle of the projects."
-      },
-      "projects": []
+      }
     },
     {
+      "id": "blob",
       "position": "Software Architect",
       "company": "BlobCity",
       "from": "April 2013",
@@ -65,10 +66,10 @@
           "Software development process management"
         ]
       },
-      "projects": [],
       "awards": []
     },
     {
+      "id": "acc",
       "position": "Senior Software Engineer",
       "company": "Accenture",
       "from": "December 2009",
@@ -83,10 +84,10 @@
           "Project Delivery"
         ]
       },
-      "projects": [],
       "awards": []
     },
     {
+      "id": "mp-qa",
       "position": "Quality Assurance",
       "company": "Messenger Plus!",
       "from": "June 2005",
@@ -98,6 +99,7 @@
       }
     },
     {
+      "id": "mp-sup",
       "position": "Technical Support Representative",
       "company": "Messenger Plus!",
       "from": "November 2003",
@@ -109,6 +111,7 @@
       }
     },
     {
+      "id": "axis",
       "position": "Administrator",
       "company": "AXIS Core",
       "from": "June 2007",
@@ -131,10 +134,11 @@
   ],
   "certifications": [
     {
-      "name": "Accenture Certified Application Developer",
+      "name": "Accenture Certified Application Developer (ASDA)",
       "authority": "Accenture and MIT",
-      "summary": "",
-      "from": "July 2011"
+      "summary": "Accenture Solutions Delivery Academy certification for Application Development processes.",
+      "from": "July 2011",
+      "more-url": "https://newsroom.accenture.com/subjects/accenture-corporate/accenture-and-mits-professional-education-programs-office-launch-new-training-and-certification-program-for-companys-global-it-workforce.htm"
     },
     {
       "name": "Oracle Certified Professional, Java SE 6 Programmer",
@@ -142,6 +146,71 @@
       "summary": "",
       "from": "May 2011",
       "url": "https://www.youracclaim.com/badges/713a762f-5388-4d20-8559-b45c02328f7d/linked_in_profile"
+    }
+  ],
+  "projects": [
+    {
+      "job-id": "tw",
+      "title": "US based Global Credit Card company",
+      "type": "with",
+      "employer": "ThoughtWorks",
+      "from": "August 2014",
+      "location": "Wilmington, Delaware",
+      "body": [
+        "Leading and developing a solution for the new platform which is a business-critical core for the day to day functioning of the bank's current business as well as to enable them launch future lines of business. The CQRS and event sourced banking platform allows them to manage multiple products and future lines of business on a single highly horizontally scalable system.",
+        "Lead the development team managing third party integration through a generic highly available and scalable gateway service.",
+        "Also developed other solutions which include developing new features, migrating legacy applications and introducing automation test strategies. The assignment also involved introducing modern tools, frameworks and design paradigms to existing systems.",
+        "Worked on a number of engagements which included both on and offsite work where he was responsible to evangelise XP practices."
+        ]
+    },
+    {
+      "job-id": "blob",
+      "title": "aBCDE: a BlobCity Development Environment",
+      "type": "for",
+      "employer": "BlobCity",
+      "from": "November 2013",
+      "to": "July 2014",
+      "location": "Mumbai, India",
+      "body": [
+        "Lead Developer for aBCDE (a BlobCity Development Environment) which is a custom package Eclipse IDE which integrates with the BlobCity platform allowing automation and increasing ease of development and deployment from a local environment to the cloud."
+      ]
+    },
+    {
+      "job-id": "blob",
+      "title": "Solar Rooftop",
+      "type": "with",
+      "employer": "BlobCity",
+      "from": "May 2013",
+      "to": "July 2013",
+      "location": "Mumbai, India",
+      "body": [
+        "iOS application to help customers move towards the use of photo voltaic panels in order to save electricity. This application provides a quick estimate on the investment required and potential savings based on current electricity usage for a household."
+      ]
+    },
+    {
+      "job-id": "blob",
+      "title": "Nutriprash",
+      "type": "with",
+      "employer": "BlobCity",
+      "from": "August 2013",
+      "to": "October 2013",
+      "location": "Mumbai, India",
+      "body": [
+        "Lead Developer and UX Designer for an online shopping website allowing management of products, orders, deliveries, a notification system, billing via multiple payment gateways"
+      ]
+    },
+    {
+      "job-id": "acc",
+      "title": "Enterprise Dispatch GUI Environment",
+      "type": "with",
+      "employer": "Accenture",
+      "from": "March 2010",
+      "to": "April 2013",
+      "location": "Mumbai, India",
+      "body": [
+        "Designed and Developed a desktop application for one of the world's leading telecom companies to handle customer tickets and perform workforce management of over 40,000 technicians to enable dispatching them for jobs. This application is built using Java Swing and the Spring Integration framework on IBM's WebSphere servers.",
+        "Was a part of the design and development phases along with analysis and writing of the business and system requirements for the application."
+      ]
     }
   ]
 }

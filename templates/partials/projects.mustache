@@ -1,0 +1,19 @@
+<section>
+  <div class="sectionTitle">
+    <h1>Projects</h1>
+  </div>
+
+  <div class="sectionContent">
+    {{#projects}}
+    <article>
+      {{> templates/partials/project-title}}
+      <p>
+        {{#summary}}
+        {{> templates/partials/project-summary}}
+        {{/summary}}
+      </p>
+    </article>
+    {{/projects}}
+  </div>
+  <div class="clear"></div>
+</section>

@@ -12,9 +12,7 @@
     "grunt-contrib-cssmin": "^1.0.1",
     "grunt-contrib-htmlmin": "^2.0.0",
     "grunt-mustache-render": "^1.9.2",
-    "load-grunt-tasks": "^3.5.2"
-  },
-  "devDependencies": {
+    "load-grunt-tasks": "^3.5.2",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0"
   }

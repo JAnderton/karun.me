@@ -15,5 +15,8 @@
     "load-grunt-tasks": "^3.5.2",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"no-op. done.\""
   }
 }

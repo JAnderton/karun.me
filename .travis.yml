@@ -9,3 +9,6 @@ deploy:
   on:
     repo: JAnderton/karun.me
   local_dir: out
+
+before_install: npm install -g grunt-cli
+before_script: grunt build

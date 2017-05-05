@@ -8,3 +8,4 @@ deploy:
   acl: public_read
   on:
     repo: JAnderton/karun.me
+  local_dir: out

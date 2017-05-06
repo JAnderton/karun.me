@@ -7,7 +7,6 @@ install: npm install
 
 script: grunt build
 
-before_deploy: cd out && pwd && ls
 deploy:
   provider: s3
   access_key_id: AKIAI6LDSPCCVC23XKKA
@@ -15,6 +14,3 @@ deploy:
     secure: ne2iCfp/Fz7NoKW9+pzYLjfGYAO1YlU3wJitMCHCyRDeRJRP7fVdu4C5Ch9A6dHIc6WQ/EN6mgD5a8yfl3GsbcjTWFLmQDKEkMB5H9uP710FDIsxoniQ9gRGpxPBtckQmLCuzKlp6OH0fD+3F/W2Bf8t7m9geOIwASqfULLmpv7bQ4uxFpaPQ+VXxgOzMw+tzN/NrmzSZaaaYlRz1djrOCC5YxA7e3+Rw32/zCtvulczInBXDsQQEcWvvfJHPjvG8QItG0fvggHgcrBGF6FmtLJ7QPyJyKsszjXU5T47o4so2SbH2GSIPYLyUqHXkr/TJ50B87FaoGyvASH49xu4wRk3VB2OtzOodvQQ5nLfNdd/OtHyBMf6nWydFJaRpAxkwFmXy4p3rhdk3MRpn0HwPNLUxOnWlswwJCgRwXtTjcqXeTLqzuMafygW4FQBKX+uQsXL8a1eREPFl4UXfnz8NQwXq88a5nWwRj3/JFBXXCj2XVX3gSCi46hoPbstmADAbjfdadMafBnv3XpxZIkZn6L13aJgUde+yXW2Gw1hEn1SqnCDjO1vN1YwHKuYPd/31rG5GPosJFg8xVZ58bcBVi9qdrK8r31+uAHbWbw7dLD0P1wca5zcfbDljb+xORT2b/4wve6IWY+xmSXIjSDZ1hkMgamiSs9WsxYeoum4ebs=
   bucket: karun.me
   acl: public_read
-  on:
-    repo: JAnderton/karun.me
-  local_dir: out

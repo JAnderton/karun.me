@@ -1,18 +1,17 @@
 language: node_js
 node_js:
-  - "4.2.0"
-
+- 4.2.0
 before_install: npm install -g grunt-cli
 install: npm install
-
 script: grunt build
-
 deploy:
   provider: s3
-  access_key_id: AKIAI6LDSPCCVC23XKKA
+  access_key_id: AKIAJCVE6ZCBQEF23G5A
   secret_access_key:
-    secure: ne2iCfp/Fz7NoKW9+pzYLjfGYAO1YlU3wJitMCHCyRDeRJRP7fVdu4C5Ch9A6dHIc6WQ/EN6mgD5a8yfl3GsbcjTWFLmQDKEkMB5H9uP710FDIsxoniQ9gRGpxPBtckQmLCuzKlp6OH0fD+3F/W2Bf8t7m9geOIwASqfULLmpv7bQ4uxFpaPQ+VXxgOzMw+tzN/NrmzSZaaaYlRz1djrOCC5YxA7e3+Rw32/zCtvulczInBXDsQQEcWvvfJHPjvG8QItG0fvggHgcrBGF6FmtLJ7QPyJyKsszjXU5T47o4so2SbH2GSIPYLyUqHXkr/TJ50B87FaoGyvASH49xu4wRk3VB2OtzOodvQQ5nLfNdd/OtHyBMf6nWydFJaRpAxkwFmXy4p3rhdk3MRpn0HwPNLUxOnWlswwJCgRwXtTjcqXeTLqzuMafygW4FQBKX+uQsXL8a1eREPFl4UXfnz8NQwXq88a5nWwRj3/JFBXXCj2XVX3gSCi46hoPbstmADAbjfdadMafBnv3XpxZIkZn6L13aJgUde+yXW2Gw1hEn1SqnCDjO1vN1YwHKuYPd/31rG5GPosJFg8xVZ58bcBVi9qdrK8r31+uAHbWbw7dLD0P1wca5zcfbDljb+xORT2b/4wve6IWY+xmSXIjSDZ1hkMgamiSs9WsxYeoum4ebs=
+    secure: fBR4vkpuu6V90krPiJj/Dr+7RAIcdJChJ7ciRd/fQ8xxxDCf5OXpJjD17n4Rk3MxmWThzCQlJJqmAcU8dkIzC7PgKVCz4oR2lY7m4m/e7iI6ocVuikisnh+eeGEudd1D5m+qXeyGqhA3jxb1U/TmgoWUnEGdY46XF5deFTTQuOaApJqojWzQbPtoJauo0VysD6mACpGD/vN6hdtUhQZUEBtYyQ3I773lwmimWiOavOPuhhcISFsFt+M+dSICs5hRnr8P9FwvlI3Lyd31DFGzosJV3z2SNpVWarLmyShjU4hlEoD8CqOQMtk2/o3znNZPtZWIeFiXNNGOwJyNnfHauXK1icNnfuaABrAgErn//pvHDsC3hn0WwKiRqm97F01YkMqCyRhAC3kpgytqHOhfqGDdSF5aIyRqKJ3T4qSMjcsH0krAndxxW9VBx9yQbCGP5Edu9c0Dr//s8XBBKrhtRD6pwDy09IkyMNPD5sYtwlXUzatZ5UbxKaP2EH3U7RFhwKxgw2czlU+CkIMFfDMj+8t2WAR0FH9InPNFQGCXQHZt/HGeE+FHviqTI6QBlCZGmr1n1918IwvKOy4Vv9VWK6S5bnQfhGBumrgQxZADiO/NpOVGzskLZBP7nNqq3InxOv0gtL0XkR1KzoKmeXuA3/SSnFQqbigTYkrzwY272tE=
   bucket: karun.me
   acl: public_read
   skip_cleanup: true
-  local_dir: out
+  local-dir: out
+  on:
+    repo: JAnderton/karun.me

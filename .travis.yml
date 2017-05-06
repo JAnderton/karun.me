@@ -1,6 +1,13 @@
 language: node_js
 node_js:
   - "4.2.0"
+
+before_install: npm install -g grunt-cli
+install: npm install
+
+script: grunt build
+
+before_deploy: cd out
 deploy:
   provider: s3
   access_key_id: AKIAI6LDSPCCVC23XKKA
@@ -10,8 +17,3 @@ deploy:
   acl: public_read
   on:
     repo: JAnderton/karun.me
-  local_dir: out
-
-before_install: npm install -g grunt-cli
-install: npm install
-before_script: grunt build

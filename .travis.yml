@@ -7,7 +7,7 @@ install: npm install
 
 script: grunt build
 
-before_deploy: cd out
+before_deploy: cd out && pwd && ls
 deploy:
   provider: s3
   access_key_id: AKIAI6LDSPCCVC23XKKA
@@ -17,3 +17,4 @@ deploy:
   acl: public_read
   on:
     repo: JAnderton/karun.me
+  local_dir: out

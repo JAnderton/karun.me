@@ -4,7 +4,7 @@
   "description": "Builds resume websites from yaml",
   "author": "Karun Japhet",
   "license": "Apache-2.0",
-  "repository": "https://github.com/JAnderton/resumer.io",
+  "repository": "https://github.com/javatarz/resumer.io",
   "dependencies": {
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",

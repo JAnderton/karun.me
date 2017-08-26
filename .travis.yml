@@ -14,4 +14,4 @@ deploy:
   skip_cleanup: true
   local-dir: out
   on:
-    repo: JAnderton/karun.me
+    repo: javatarz/karun.me

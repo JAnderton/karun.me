@@ -14,23 +14,11 @@
   "summary": {
     "intro": [
       {
-        "text":"Karun is a graduate from Mumbai University having done his B.E. in Information Technology."
+        "text": "Karun is a tech lead at ThoughtWorks and has experience delivering large enterprise scale projects in various domains like finance, telecommunication, energy and gaming using different technology stacks including Java, .NET, Ruby etc."
       },
       {
         "class": "no-print",
-        "text":"He has excellent interpersonal and communication skills demonstrated throughout his academic as well as professional career."
-      },
-      {
-        "class": "no-print",
-        "text":"He has a keen interest in analysis (technical and functional) and problem solving. His analytic skills allow him to provide multiple solutions to a given problem and evaluate the best approach for it."
-      },
-      {
-        "class": "no-print",
-        "text":"A sound technical person, he has the ability to easily grasp the functional aspects of a project and adapt quickly according to the circumstances."
-      },
-      {
-        "class": "no-print",
-        "text":"A positive attitude towards work, pro-activeness along with diligence and discipline has helped him to overcome challenges and succeed in all the tasks undertaken by him."
+        "text": "Karun helps and guides teams to deliver quality software following Agile principles and also a consultant who advices clients on their technical and architectural decisions."
       }
     ],
     "experience": {
@@ -45,9 +33,11 @@
     "specialties": {
       "title": "Specialties",
       "items": [
-        "Software Development",
-        "Problem Analysis and Solution Derivation",
-        "Strong Inter-personal skills"
+        "Continuous Delivery",
+        "Continuous Integration",
+        "Build & Deployment Automation",
+        "Across shore collaboration",
+        "DevOps"
       ]
     }
   },

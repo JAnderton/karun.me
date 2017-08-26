@@ -170,10 +170,22 @@
   "projects": [
     {
       "job-id": "tw",
-      "title": "US based Global Credit Card company",
+      "title": "Machine Learning platform",
+      "type": "with",
+      "employer": "ThoughtWorks",
+      "from": "June 2017",
+      "location": "Wilmington, Delaware",
+      "body": [
+        "Built a Machine Learning (ML) platform that allows data scientists to rapidly iterate and develop new ML models and deploy them using standard continuous delivery principles. The platform allows the business to evaluate the performance of multiple models real time and select which ones actively make decisions."
+        ]
+    },
+    {
+      "job-id": "tw",
+      "title": "Financial operations platform",
       "type": "with",
       "employer": "ThoughtWorks",
       "from": "August 2014",
+      "to": "June 2017",
       "location": "Wilmington, Delaware",
       "body": [
         "Leading and developing a solution for the new platform which is a business-critical core for the day to day functioning of the bank's current business as well as to enable them launch future lines of business. The CQRS and event sourced banking platform allows them to manage multiple products and future lines of business on a single highly horizontally scalable system.",

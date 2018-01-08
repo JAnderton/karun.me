@@ -1,0 +1,52 @@
+https://keybase.io/javatarz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://karun.me
+  * I am javatarz (https://keybase.io/javatarz) on keybase.
+  * I have a public key ASC_DYcjbRbxDc-xJ1tZwg1j0fPUKBXJbMH6B6pAms_VDAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120bf0d87236d16f10dcfb1275b59c20d63d1f3d42815c96cc1fa07aa409acfd50c0a",
+      "host": "keybase.io",
+      "kid": "0120bf0d87236d16f10dcfb1275b59c20d63d1f3d42815c96cc1fa07aa409acfd50c0a",
+      "uid": "7f33278a770c073897f778f1c1e8f319",
+      "username": "javatarz"
+    },
+    "merkle_root": {
+      "ctime": 1515452874,
+      "hash": "23445fe53e206f5cf1a0b76541190ce103ab34737d8e8a943a33bcb21de720ca9f4b6498bf50fdd6232dfef85ecde1e0d1e05211f8f0a5b18655617cb4aff307",
+      "hash_meta": "ebe5796fb7a289a25d98523e5201f49a7dbae9be74e6546a522eb1d114c036b9",
+      "seqno": 1903936
+    },
+    "service": {
+      "hostname": "karun.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1515452935,
+  "expire_in": 504576000,
+  "prev": "cec0a066a0fb95c8174f73391328278ec0699801c68eacc43ed837606d6f1324",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvw2HI20W8Q3PsSdbWcINY9Hz1CgVyWzB+geqQJrP1QwKp3BheWxvYWTFA0F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYmYwZDg3MjM2ZDE2ZjEwZGNmYjEyNzViNTljMjBkNjNkMWYzZDQyODE1Yzk2Y2MxZmEwN2FhNDA5YWNmZDUwYzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYmYwZDg3MjM2ZDE2ZjEwZGNmYjEyNzViNTljMjBkNjNkMWYzZDQyODE1Yzk2Y2MxZmEwN2FhNDA5YWNmZDUwYzBhIiwidWlkIjoiN2YzMzI3OGE3NzBjMDczODk3Zjc3OGYxYzFlOGYzMTkiLCJ1c2VybmFtZSI6ImphdmF0YXJ6In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTE1NDUyODc0LCJoYXNoIjoiMjM0NDVmZTUzZTIwNmY1Y2YxYTBiNzY1NDExOTBjZTEwM2FiMzQ3MzdkOGU4YTk0M2EzM2JjYjIxZGU3MjBjYTlmNGI2NDk4YmY1MGZkZDYyMzJkZmVmODVlY2RlMWUwZDFlMDUyMTFmOGYwYTViMTg2NTU2MTdjYjRhZmYzMDciLCJoYXNoX21ldGEiOiJlYmU1Nzk2ZmI3YTI4OWEyNWQ5ODUyM2U1MjAxZjQ5YTdkYmFlOWJlNzRlNjU0NmE1MjJlYjFkMTE0YzAzNmI5Iiwic2Vxbm8iOjE5MDM5MzZ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoia2FydW4ubWUiLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zOCJ9LCJjdGltZSI6MTUxNTQ1MjkzNSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJjZWMwYTA2NmEwZmI5NWM4MTc0ZjczMzkxMzI4Mjc4ZWMwNjk5ODAxYzY4ZWFjYzQzZWQ4Mzc2MDZkNmYxMzI0Iiwic2Vxbm8iOjExLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQOCJE4iZPJ8SYIBybcyZqCi1Czu9CaOxrMHU1bQ6ymgyUs8586W82wxECapD7A+YYcxiE86qLxKpCFdakqtUxguoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCA9E3oazJpOQiaRn+p/WF2m/Uerqa0yYWML+yKIPLASDKN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/javatarz

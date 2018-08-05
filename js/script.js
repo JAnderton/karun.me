@@ -88,7 +88,7 @@ $(function(){
 	/*=========================================================================
 		Menu Functions
 	=========================================================================*/
-	$('.menu-btn').on('click', function(e){
+	$('.menu-button').on('click', function(e){
 		e.preventDefault();
 		$('body').toggleClass('show-menu');
 	});

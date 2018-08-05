@@ -86,13 +86,11 @@ module.exports = function (grunt) {
         }
       }
     },
-    imagemin: {
-      dynamic: {
-        files: [{
-          expand: true,
-          src: ['img/*.{png,jpg,gif}'],
-          dest: 'out'
-        }]
+    cwebp: {
+      images: {
+        files: {
+          'out/img/person.png': [ 'img/person.png' ]
+        }
       }
     },
     uglify: {
@@ -107,7 +105,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.registerTask('build', [
-    'imagemin',
+    'cwebp',
     'cssmin',
     'uglify',
     'htmlmin',

@@ -3,19 +3,19 @@ module.exports = function (grunt) {
     watch: {
       resources: {
         files: ['js/*.js'],
-        tasks: ['uglify'],
+        tasks: ['uglify']
       },
       resources: {
         files: ['css/*.css'],
-        tasks: ['cssmin'],
+        tasks: ['cssmin']
       },
       resources: {
         files: ['img/*.{png,jpg,gif}}'],
-        tasks: ['imgmin'],
+        tasks: ['imgmin']
       },
       resources: {
         files: ['resources/*.ico}'],
-        tasks: ['copy'],
+        tasks: ['copy']
       },
     },
     copy: {
@@ -23,31 +23,37 @@ module.exports = function (grunt) {
         expand: true,
         cwd: 'resources',
         src: '**',
-        dest: 'out/',
+        dest: 'out/'
       },
       min_js: {
         expand: true,
         cwd: 'js',
         src: '*.min.js',
-        dest: 'out/js/',
+        dest: 'out/js/'
       },
       bootstrap_min_css: {
         expand: true,
         cwd: 'bootstrap/css',
         src: '*.min.css',
-        dest: 'out/bootstrap/css',
+        dest: 'out/bootstrap/css'
       },
       fonts: {
         expand: true,
         cwd: 'fonts',
         src: '**',
-        dest: 'out/fonts/',
+        dest: 'out/fonts/'
       },
       min_css: {
         expand: true,
         cwd: 'css',
         src: '*.min.css',
-        dest: 'out/css/',
+        dest: 'out/css/'
+      },
+      img_svg: {
+        expand: true,
+        cwd: 'img',
+        src: '*.svg',
+        dest: 'out/img/'
       }
     },
     browserSync: {
@@ -89,7 +95,7 @@ module.exports = function (grunt) {
     cwebp: {
       images: {
         files: {
-          'out/img/person.png': [ 'img/person.png' ]
+          'out/img/person.png': [ 'img/person.png' ],
         }
       }
     },

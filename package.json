@@ -1,22 +1,25 @@
 {
-  "name": "resumer.io",
+  "name": "karun.me",
   "version": "1.0.0",
-  "description": "Builds resume websites from yaml",
+  "description": "Builds Karun Japhet's website",
   "author": "Karun Japhet",
   "license": "Apache-2.0",
-  "repository": "https://github.com/javatarz/resumer.io",
+  "repository": "https://github.com/javatarz/karun.me",
   "dependencies": {
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.1",
     "grunt-contrib-htmlmin": "^2.0.0",
-    "grunt-mustache-render": "^1.9.2",
     "load-grunt-tasks": "^3.5.2",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-uglify": "^3.4.0",
+    "grunt-contrib-imagemin": "^0.1.2"
   },
   "scripts": {
     "test": "echo \"no-op. done.\""
+  },
+  "devDependencies": {
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }

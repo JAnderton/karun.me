@@ -1,18 +1,9 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     watch: {
-      tasks: ['mustache_render'],
-      templates: {
-        files: ['templates/*.mustache'],
-        tasks: ['mustache_render'],
-      },
-      partials: {
-        files: ['templates/partials/*.mustache'],
-        tasks: ['mustache_render'],
-      },
-      data: {
-        files: ['data/*.json'],
-        tasks: ['mustache_render'],
+      resources: {
+        files: ['js/*.js'],
+        tasks: ['uglify'],
       },
       resources: {
         files: ['css/*.css'],
@@ -20,37 +11,44 @@ module.exports = function (grunt) {
       },
       resources: {
         files: ['img/*.{png,jpg,gif}}'],
-        tasks: ['copy'],
+        tasks: ['imgmin'],
       },
       resources: {
         files: ['resources/*.ico}'],
         tasks: ['copy'],
       },
     },
-    mustache_render: {
-      all: {
-        files: [
-          {
-            data: "data/karun.json",
-            template: "templates/webpage.mustache",
-            dest: "out/index.html"
-          }
-        ]
-      }
-    },
     copy: {
-      main: {
+      resources: {
         expand: true,
         cwd: 'resources',
         src: '**',
         dest: 'out/',
       },
-      images: {
+      min_js: {
         expand: true,
-        cwd: 'img',
-        src: '**',
-        dest: 'out/img/',
+        cwd: 'js',
+        src: '*.min.js',
+        dest: 'out/js/',
       },
+      bootstrap_min_css: {
+        expand: true,
+        cwd: 'bootstrap/css',
+        src: '*.min.css',
+        dest: 'out/bootstrap/css',
+      },
+      fonts: {
+        expand: true,
+        cwd: 'fonts',
+        src: '**',
+        dest: 'out/fonts/',
+      },
+      min_css: {
+        expand: true,
+        cwd: 'css',
+        src: '*.min.css',
+        dest: 'out/css/',
+      }
     },
     browserSync: {
       dev: {
@@ -84,7 +82,7 @@ module.exports = function (grunt) {
           collapseWhitespace: true
         },
         files: {
-          'out/index.html': 'out/index.html'
+          'out/index.html': 'index.html'
         }
       }
     },
@@ -96,12 +94,25 @@ module.exports = function (grunt) {
           dest: 'out'
         }]
       }
+    },
+    uglify: {
+      dist: {
+        files: {
+          'out/js/script.js': ['js/script.js']
+        }
+      }
     }
   });
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('build', ['mustache_render', 'cssmin', 'htmlmin', 'copy']);
+  grunt.registerTask('build', [
+    'imagemin',
+    'cssmin',
+    'uglify',
+    'htmlmin',
+    'copy'
+  ]);
   grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
   grunt.registerTask('default', ['build']);
 };

@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Karun Japhet's personal website"/>
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		
 		<!--page-title-->
@@ -19,7 +20,6 @@
 		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' >
 		<link rel='stylesheet' type='text/css' href='css/ionicons.min.css' >
 		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
-		<link rel='stylesheet' type='text/css' href='css/linea.css' >
 		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
 		<link rel='stylesheet' type='text/css' href='css/style.css' >
 		<link rel='stylesheet' type='text/css' href='css/color-blue.css' >
@@ -376,7 +376,18 @@
 		<script src='js/owl.carousel.min.js' ></script>
 		<script src='js/jquery.magnific-popup.min.js' ></script>
 		<script src='js/validator.min.js' ></script>
-		<script src='js/script.js' ></script>
+    <script src='js/script.js' ></script>
+    
+    <script>
+      var span = document.getElementsByTagName('span')[0];
+      span.textContent = 'interactive'; // change DOM text content
+      span.style.display = 'inline';  // change CSSOM property
+      // create a new element, style it, and append it to the DOM
+      var loadTime = document.createElement('div');
+      loadTime.textContent = 'You loaded this page on: ' + new Date();
+      loadTime.style.color = 'blue';
+      document.body.appendChild(loadTime);
+    </script>
 		
 	</body>
 </html>

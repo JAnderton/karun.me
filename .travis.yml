@@ -3,7 +3,7 @@ node_js:
 - 6.11.2
 before_install: npm install -g grunt-cli
 install: npm install
-script: cat Gruntfile.js && grunt build
+script: grunt --verbose build
 deploy:
   provider: s3
   access_key_id:

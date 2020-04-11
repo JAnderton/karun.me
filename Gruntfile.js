@@ -1,23 +1,5 @@
 module.exports = function (grunt) {
   grunt.initConfig({
-    watch: {
-      resources: {
-        files: ['js/*.js'],
-        tasks: ['uglify']
-      },
-      resources: {
-        files: ['css/*.css'],
-        tasks: ['uncss']
-      },
-      resources: {
-        files: ['img/*.{png,jpg,gif}}'],
-        tasks: ['cwebp']
-      },
-      resources: {
-        files: ['resources/*.ico}'],
-        tasks: ['copy']
-      },
-    },
     copy: {
       resources: {
         expand: true,
@@ -36,22 +18,23 @@ module.exports = function (grunt) {
         cwd: 'img',
         src: '*.svg',
         dest: 'out/img/'
-      }
-    },
-    browserSync: {
-      dev: {
-        bsFiles: {
-          src: [
-            'out/css/*',
-            'out/img/*',
-            'out/*'
-          ]
-        },
-        options: {
-          watchTask: true,
-          server: './out'
-        }
-      }
+      },
+      bootstrap_css: {
+        src: 'bootstrap/css/bootstrap.min.css',
+        dest: 'out/bootstrap/css/bootstrap.min.css'
+      },
+      js: {
+        expand: true,
+        cwd: 'js',
+        src: '*.js',
+        dest: 'out/js/'
+      },
+      cp_css: {
+        expand: true,
+        cwd: 'css',
+        src: '*.css',
+        dest: 'out/css/'
+      },
     },
     cwebp: {
       static: {
@@ -59,24 +42,6 @@ module.exports = function (grunt) {
           'out/img/person.webp': 'img/person.png'
         }
       },
-    },
-    uglify: {
-      js: {
-        files: {
-          'out/js/all.js': ['js/*.js']
-        }
-      }
-    },
-    uncss: {
-      dist: {
-        options: {
-          removeComments: true,
-          collapseWhitespace: true
-        },
-        files: {
-          'out/css/only_used.css': ['index.html']
-        }
-      }
     },
     processhtml: {
       dist: {
@@ -100,7 +65,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('build', ['cwebp', 'uglify', 'uncss', 'processhtml', 'htmlmin', 'copy']);
+  grunt.registerTask('build', ['cwebp', 'copy', 'processhtml']);
   grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
   grunt.registerTask('default', ['build']);
 };

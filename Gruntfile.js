@@ -92,7 +92,7 @@ module.exports = function (grunt) {
         }
       }
     },
-    cwebp: {
+    imagemin: {
       static: {
         files: {
           'out/img/person.png': 'img/person.png'
@@ -110,7 +110,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('build', ['cwebp', 'cssmin', 'uglify', 'htmlmin', 'copy']);
+  grunt.registerTask('build', ['imagemin', 'cssmin', 'uglify', 'htmlmin', 'copy']);
   grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
   grunt.registerTask('default', ['build']);
 };

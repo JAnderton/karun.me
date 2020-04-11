@@ -7,7 +7,7 @@ module.exports = function (grunt) {
       },
       resources: {
         files: ['css/*.css'],
-        tasks: ['cssmin']
+        tasks: ['uncss']
       },
       resources: {
         files: ['img/*.{png,jpg,gif}}'],

@@ -5,4 +5,4 @@
 [Karun's personal website](https://karun.me)
 
 ## Local Development
-`npm i && grunt dev`
+`npm i && npm run dev`

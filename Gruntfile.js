@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
     watch: {
       resources: {
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
     browserSync: {
       dev: {
         bsFiles: {
-          src : [
+          src: [
             'out/css/*',
             'out/img/*',
             'out/*'
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
     cwebp: {
       images: {
         files: {
-          'out/img/person.png': [ 'img/person.png' ],
+          'out/img/person.png': ['img/person.png'],
         }
       }
     },

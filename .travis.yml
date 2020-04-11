@@ -1,8 +1,10 @@
 language: node_js
 node_js:
-- latest
+- 6.11.2
 before_install: npm install -g grunt-cli
-install: npm install
+install:
+  - nvm ls-remote
+  - npm install
 script: grunt --verbose build
 deploy:
   provider: s3

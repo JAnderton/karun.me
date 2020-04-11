@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 13.12.0
+      uses: actions/setup-node@v1
+      with:
+        node-version: 13.12.0
+    - name: Install all node depedencies
+      run: npm install
+    - name: Install grunt
+      run: npm install -g grunt-cli
+    - name: Grunt build
+      run: grunt build

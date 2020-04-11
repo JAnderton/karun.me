@@ -25,12 +25,6 @@ module.exports = function (grunt) {
         src: '**',
         dest: 'out/'
       },
-      min_js: {
-        expand: true,
-        cwd: 'js',
-        src: '*.min.js',
-        dest: 'out/js/'
-      },
       bootstrap_min_css: {
         expand: true,
         cwd: 'bootstrap/css',
@@ -100,9 +94,9 @@ module.exports = function (grunt) {
       },
     },
     uglify: {
-      dist: {
+      js: {
         files: {
-          'out/js/script.js': ['js/script.js']
+          'out/js/all.js': ['js/*.js']
         }
       }
     }

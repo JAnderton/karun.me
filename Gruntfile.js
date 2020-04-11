@@ -25,23 +25,11 @@ module.exports = function (grunt) {
         src: '**',
         dest: 'out/'
       },
-      bootstrap_min_css: {
-        expand: true,
-        cwd: 'bootstrap/css',
-        src: '*.min.css',
-        dest: 'out/bootstrap/css'
-      },
       fonts: {
         expand: true,
         cwd: 'fonts',
         src: '**',
         dest: 'out/fonts/'
-      },
-      min_css: {
-        expand: true,
-        cwd: 'css',
-        src: '*.min.css',
-        dest: 'out/css/'
       },
       img_svg: {
         expand: true,
@@ -65,27 +53,6 @@ module.exports = function (grunt) {
         }
       }
     },
-    cssmin: {
-      target: {
-        files: [{
-          expand: true,
-          cwd: 'css',
-          src: ['*.css', '!*.min.css'],
-          dest: 'out/css'
-        }]
-      }
-    },
-    htmlmin: {
-      dist: {
-        options: {
-          removeComments: true,
-          collapseWhitespace: true
-        },
-        files: {
-          'out/index.html': 'index.html'
-        }
-      }
-    },
     cwebp: {
       static: {
         files: {
@@ -99,12 +66,41 @@ module.exports = function (grunt) {
           'out/js/all.js': ['js/*.js']
         }
       }
+    },
+    uncss: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          'out/css/only_used.css': ['index.html']
+        }
+      }
+    },
+    processhtml: {
+      dist: {
+        files: {
+          'out/index.html': 'index.html'
+        }
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          'out/index.html': 'out/index.html'
+        }
+      }
     }
   });
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('build', ['cwebp', 'cssmin', 'uglify', 'htmlmin', 'copy']);
+  grunt.registerTask('build', ['cwebp', 'uglify', 'uncss', 'processhtml', 'htmlmin', 'copy']);
   grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
   grunt.registerTask('default', ['build']);
 };

@@ -92,12 +92,12 @@ module.exports = function (grunt) {
         }
       }
     },
-    imagemin: {
+    cwebp: {
       static: {
         files: {
-          'out/img/person.png': 'img/person.png'
+          'out/img/person.webp': 'img/person.png'
         }
-      }
+      },
     },
     uglify: {
       dist: {
@@ -110,7 +110,7 @@ module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('build', ['imagemin', 'cssmin', 'uglify', 'htmlmin', 'copy']);
+  grunt.registerTask('build', ['cwebp', 'cssmin', 'uglify', 'htmlmin', 'copy']);
   grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
   grunt.registerTask('default', ['build']);
 };

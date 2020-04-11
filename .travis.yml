@@ -13,7 +13,6 @@ deploy:
     secure: "fBR4vkpuu6V90krPiJj/Dr+7RAIcdJChJ7ciRd/fQ8xxxDCf5OXpJjD17n4Rk3MxmWThzCQlJJqmAcU8dkIzC7PgKVCz4oR2lY7m4m/e"
   bucket: karun.me
   acl: public_read
-  skip_cleanup: true
-  local-dir: out
+  local_dir: out
   on:
     repo: javatarz/karun.me

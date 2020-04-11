@@ -6,3 +6,9 @@
 
 ## Local Development
 `npm i && npm run dev`
+
+### Deployment from local
+If github actions is down, run the following command to deploy the latest code
+```
+aws-vault exec personal -- aws s3 rm --recursive s3://karun.me/ && aws-vault exec personal -- aws s3 cp --recursive --acl=public-read out/ s3://karun.me/
+```

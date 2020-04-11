@@ -1,6 +1,6 @@
 # Karun's Resume
 
-[![Build Image](https://travis-ci.org/javatarz/karun.me.svg?branch=master)](https://travis-ci.org/javatarz/karun.me)
+![Build & Deploy](https://github.com/javatarz/karun.me/workflows/Build%20&%20Deploy/badge.svg)
 
 [Karun's personal website](https://karun.me)
 

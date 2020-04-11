@@ -93,9 +93,9 @@ module.exports = function (grunt) {
       }
     },
     cwebp: {
-      images: {
+      static: {
         files: {
-          'out/img/person.png': ['img/person.png'],
+          'out/img/person.png': 'img/person.png'
         }
       }
     },

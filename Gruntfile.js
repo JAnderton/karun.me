@@ -11,7 +11,7 @@ module.exports = function (grunt) {
       },
       resources: {
         files: ['img/*.{png,jpg,gif}}'],
-        tasks: ['imgmin']
+        tasks: ['cwebp']
       },
       resources: {
         files: ['resources/*.ico}'],
